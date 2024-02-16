@@ -1,0 +1,17 @@
+.Block {
+  width: 150px;
+  height: 150px;
+  border: 7px solid black;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+  /* padding: 5px; */
+}
+
+.mark2 {
+  background-image: url("/src/images/dot.png");
+}
+
+.mark1 {
+  background-image: url("/src/images/cross_1.png");
+}

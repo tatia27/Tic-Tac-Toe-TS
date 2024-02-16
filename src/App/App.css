@@ -1,0 +1,44 @@
+.App {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* .board {
+  display: grid;
+  cursor: pointer;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.header {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #232020;
+}
+
+.mark2 {
+  background-image: url("/src/images/cross.png");
+}
+
+.mark1 {
+  background-image: url("/src/images/dot.png");
+}
+
+.Block {
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+  background-size: cover;
+  display: inline-block;
+} */
