@@ -3,6 +3,11 @@ type Action<T> = {
   payload?: T;
 };
 
+const SET_PLAYER = "SET_PLAYER";
+const SET_MARKS = "SET_MARKS";
+const SET_GAMEOVER = "SET_GAMEOVER";
+const SET_WINNER = "SET_WINNER";
+
 type ActionMarks = Action<number[]>;
 type ActionPlayer = Action<number>;
 type ActionGameover = Action<boolean>;
@@ -26,13 +31,13 @@ type ActionVariant = ActionPlayer | ActionMarks | ActionGameover | ActionWinner;
 
 const reducer = (state = initial_state, action: ActionVariant) => {
   switch (action.type) {
-    case "SET_PLAYER":
+    case SET_PLAYER:
       return { ...state, player: action.payload as InitialState["player"] };
-    case "SET_MARKS":
+    case SET_MARKS:
       return { ...state, marks: action.payload as InitialState["marks"] };
-    case "SET_GAMEOVER":
+    case SET_GAMEOVER:
       return { ...state, gameOver: action.payload as InitialState["gameOver"] };
-    case "SET_WINNER":
+    case SET_WINNER:
       return { ...state, win: action.payload as InitialState["win"] };
     default:
       return state;
